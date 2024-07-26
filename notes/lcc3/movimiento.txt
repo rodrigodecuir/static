@@ -1,3 +1,144 @@
+* Control básico del cursor
+---------------------------
+
+Hay varias formas de moverse a un punto específico en el texto,
+
+                         Línea previa, C-p
+                                 .
+                                 .
+     Atrás, C-b .... Posición actual del cursor ... Adelante, C-f
+                                 .
+				 .
+		         Siguiente línea, C-n
+
+>> Mueve el cursor entre las vigas del puente
+
+            ..                                       ..
+            []                                       []
+          .:[]:_                                   ,:[]:.
+        .: :[]: :-.                             ,-: :[]: :.
+      .: : :[]: : :`._                       ,.': : :[]: : :.
+    .: : : :[]: : : : :-._               _,-: : : : :[]: : : :.
+_..: : : : :[]: : : : : : :-._________.-: : : : : : :[]: : : : :-._
+_:_:_:_:_:_:[]:_:_:_:_:_:_:_:_:_:_:_:_:_:_:_:_:_:_:_:[]:_:_:_:_:_:_
+!!!!!!!!!!!![]!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!![]!!!!!!!!!!!!!
+^^^^^^^^^^^^[]^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[]^^^^^^^^^^^^^
+            []                                       []
+            []                                       []
+            []                                       []
+ ~~^-~^_~^~/  \~^-~^~_~^-~_^~-^~_^~~-^~_~^~-~_~-^~_^/  \~^-~_~^-~~-
+~ _~~- ~^-^~-^~~- ^~_^-^~~_ -~^_ -~_-~~^- _~~_~-^_ ~^-^~~-_^-~ ~^
+   ~ ^- _~~_-  ~~ _ ~  ^~  - ~~^ _ -  ^~-  ~ _  ~~^  - ~_   - ~^_~
+     ~-  ^_  ~^ -  ^~ _ - ~^~ _   _~^~-  _ ~~^ - _ ~ - _ ~~^ -
+        ~^ -_ ~^^ -_ ~ _ - _ ~^~-  _~ -_   ~- _ ~^ _ -  ~ ^-
+            ~^~ - _ ^ - ~~~ _ - _ ~-^ ~ __- ~_ - ~  ~^_-
+                ~ ~- ^~ -  ~^ -  ~ ^~ - ~~  ^~ - ~
+
+  Si llegas al final de la línea y sigues avanzando te vas a caer (x⸑x)
+
+     aveda, te la creiste we xd,
+
+  en realidad vas a pasar al inicio de la siguiente línea (inténtalo):
+
+   ___|)________________________________________________________
+  |___/____________________________|___________________________||
+  |__/|_______/|____/|_____/|______|___________________________||
+  |_/(|,\____/_|___/_|____/_|______|___________________________||
+  |_\_|_/___|__|__|__|___|__|___|__|___________________________||
+  |   |     | ()  | ()   | ()   |  |                           ||
+  | (_|   -()-  -()-   -()-   -()- | -()-  -()-  -()-   -()-   ||
+  |________________________________|__|__()_|__()_|__()__|_____||
+  |__/___\_._______________________|__|__|__|__|__|__|___|_____||
+  |__\___|_._______________________|___\_|___\_|___\_|___|_____||
+  |_____/__________________________|____\|____\|____\|_________||
+  |____/___________________________|___________________________||
+
+
+  Si llegas al inicio de la línea y sigues retrocediendo vas a levitar
+
+     no te creas,
+
+  vas a pasar al final de la línea previa (inténtalo):
+
+             _.-````'-,_
+   _,.,_ ,-'`           `'-.,_
+ /)     (\                   '``-.
+((      ) )                      `\
+ \)    (_/                        )\
+  |       /)           '    ,'    / \
+  `\    ^'            '     (    /  ))
+    |      _/\ ,     /    ,,`\   (  "`
+     \Y,   |  \  \  | ````| / \_ \
+       `)_/    \  \  )    ( >  ( >
+                \( \(     |/   |/
+               /_(/_(    /_(  /_(
+
+¿Por qué p, n, b y f? que buena pregunta!
+C-p (por previous), C-n (por next), C-b (por backward) y C-f (por forward)
+
+- Y si quiero avanzar más rápido?
+
+ M-f te permite avanzar una palabra (Con C-f solo avanzas un caracter)
+ M-b te permite retroceder una palabra (Con C-b solo retrocedías un caracter
+
+inténtalo:
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lectus nulla, sollicitudin
+eget diam nec, lobortis porta nulla. Nam laoreet diam vitae eros volutpat, id venenatis risus
+pellentesque. Etiam quis nulla nec erat finibus congue. Aenean aliquam, lectus non ultricies
+bibendum, nisi ligula tincidunt nisl, sed convallis mauris turpis vitae felis. Aenean id libero
+dignissim, pharetra tortor non, feugiat tortor. Etiam gravida turpis nec ante convallis, sed
+placerat sapien commodo. In at tortor facilisis, euismod nunc a, tincidunt nulla.
+
+Si quieren moverse entre el inicio y el final de una línea pueden usar:
+
+	C-a	Regresa al inicio de la línea
+	C-e	Avanza al final de la línea
+
+intentenlo:
+
+Autogol
+
+Nací en Guadalajara.
+Mis primeros padres fueron Mamá Lupe y Papá Guille.
+Crecí como trébol de jardín,
+como moneda de cinco centavos, como tortilla.
+Crecí con la realidad desmentida en los riñones,
+con cursilerías en el camarote del amor.
+Mi mamá lloraba en los resquicios
+con el encabronamiento a oscuras, con la violencia a
+tientas.
+Mi papá se moría mirándome a los ojos,
+muriéndose en la cámara lenta de los años,
+exigiéndole a la vida.
+Y luego la ceguez de mi abuelo, los hermanos,
+el desamparo sexual de mis primas,
+el barrio en sombras
+y luego yo, tan mirón, tan melodramático.
+
+Jamás he servido para nada.
+No he hecho sino cronometrar el aniquilamiento.
+
+Como alguien me lo dijo una vez: Valgo Madre.
+
+	   Ricardo Castillo
+
+Resumen
+
+	C-f	Avanza un caracter
+	C-b	Regresa un caracter
+
+	C-n	Avanza una línea
+	C-p	Regresa una línea
+
+	M-f	Avanza una palabra
+	M-b	Regresa una palabra
+
+	C-a	Regresa al inicio de la línea
+	C-e	Avanza al final de la línea
+
+	M-a	Regresa al inicio de la oración
+	M-e	Avanza al final de la oración
 
 
 					      ,cccc,
@@ -35,22 +176,3 @@ $$$$$$"$$.$$$$$$$$$$ $$$,`$$$$$$$$$'d$$$$$$$$$$$$$$$$$h
 $$$$$$<$F,$$$$$$$$$$ $$$$,`$$$$$$$'d$$$$$$$$$$$$$$$$$$$
 $$$$$$<$ $$$$$$$$$$$ $$$$$,`$$$$",$$$$3$$$$$$$$$$$$$$$$h
 $$$$$$'F<$$$$$$$$$$$ ?$$$$$c,"",d$$$$'$$$$$$$$$$$$$$$$$$
-
-
-        / /\
-       / /  \
-      / /    \__________
-     / /      \        /\
-    /_/        \      / /
- ___\ \      ___\____/_/_
-/____\ \    /___________/\
-\     \ \   \           \ \
- \     \ \   \____       \ \
-  \     \ \  /   /\       \ \
-   \   / \_\/   / /        \ \
-    \ /        / /__________\/
-     /        / /     /
-    /        / /     /
-   /________/ /\    /
-   \________\/\ \  /
-               \_\/
