@@ -5,7 +5,6 @@
 
 TEXTO="¡Hola, mundo! Esto es un texto animado"
 
-
 # Configuración del tiempo de espera entre cada caracter
 
 TIEMPO_ESPERA=0.1
