@@ -313,51 +313,9 @@ la crisis existencial.
 
 *** Eliminar
 
-Haz tres copias del siguiente párrafo y elimínalo de cuatro formas: 
-1. Backspace
-2. C-Backspace
-3. C-d
-4. M-d
-		  
-El objetivo  es saber mucho  y entender  muy poco, vivir  al corriente
-pero olvidarlo  todo. Ni  modo, es  calidad o cantidad  y nunca  en la
-historia hubo tanto de qué enterarse.
 
-Borra las palabras naranja/naranjas del siguiente texto con
-C-Backspace y M-d:
-
-Cuando salimos  de Yaffa  a Akka  no fue  ninguna desgracia.  De hecho
-salíamos cada  año para pasar las  vacaciones en otra ciudad,  así que
-estuvimos  en  Akka de  lo  más  normal,  sin nada  extraño,  comiendo
-naranjas frescas. Tal  vez era también que en aquella  época yo estaba
-en mi infancia y disfrutaba el hecho  de no tener que ir a la escuela,
-donde  siempre  había una  naranja  en  mi  bolsillo. Como  fuera,  el
-panorama se  empezó a  esclarecer cada  vez más en  la noche  del gran
-ataque a Akka, que olía a naranja y miedo. Esa cruel noche transcurrió
-entre  el estupor  de los  hombres  y los  rezos de  las mujeres,  que
-llevaban naranjas  en sus manos. Tú  y yo, y toda  nuestra generación,
-éramos realmente jóvenes como para  entender qué significaba todo este
-asunto, mientras comíamos naranjas sentados  en el suelo. Sin embargo,
-esa noche comenzamos a atar los cabos  de la historia y, en la mañana,
-cuando los  judíos se  fueron rabiando amenazantes  se paró  un camión
-frente a la  puerta de nuestra casa, que estaba  llena de naranjas. La
-ropa de cama volaba aquí y allá,  desde la casa al camión en un trajín
-rápido y frenético, mientras mi hermano  Riyad comía una naranja en la
-esquina. Yo estaba apoyado de espaldas en la pared de la antigua casa,
-cuando vi a tu mamá treparse al camión,  luego a tu tía y a los niños;
-y tu papá te  metió a ti y a tus hermanos, arriba  de las maletas, que
-olían a naranja. Luego me sacó de la esquina donde estaba, me cargó en
-sus hombros,  y me  puso en  la canasta  de metal  sobre el  lugar del
-conductor,  donde  estaba  sentado tranquilamente  mi  hermano  Riyad,
-comiendo una naranja.  No me había acomodado todavía  cuando el camión
-empezó a  andar. Así, mi  amada Akka desapareció  poco a poco  por las
-curvas  del camino  que se  levantaba  hacia Ras  Naqura, mientras  yo
-miraba una naranja que había olvidado en mi bolsillo.
-		  
 *** Comentar 
 
-
-**** java
 public class Disco extends Articulo{
 
     private String idioma;
@@ -374,8 +332,6 @@ public class Disco extends Articulo{
     }
 }
 
-**** haskell
-
 module Lists where
 
 data List a = Void | Cons a (List a)  --deriving (Show)
@@ -388,22 +344,3 @@ instance (Show a) => Show (List a) where
 myHead :: List a -> Maybe a 
 myHead Void = Nothing
 myHead (Cons a _) = Just a
-
-**** c++
-
-#include <bits/stdc++.h>
-#define fastIo() ios_base::sync_with_stdio(0); cin.tie(0); cout.tie(0);
-using namespace std;
-void solve() {
-  int t; cin >> t;
-  int a, b;
-  for (int i = 0; i < t; i++) {
-    cin >> a;
-    cin >> b;
-    cout << min(a,b) << " " << max(a,b) << "\n";
-  }
-}
-int main() {
-  fastIo();
-  solve();
-}

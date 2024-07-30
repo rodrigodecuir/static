@@ -1,0 +1,112 @@
+* Clase pasada
+
+** Me equivoqué escribiendo un comando, ¿qué hago?
+
+ESC ESC ESC   limpia el *minibuffer*
+
+** Ventanas
+
+C-x 2     abre una ventana horizontalmente
+C-x 3     abre una ventana verticalmente
+C-x o     cambia a la siguiente ventana
+C-x 0     cierra la ventana actual
+C-x 1     cierra todas las ventanas excepto la enfocada
+
+** Buffers
+
+C-x C-b   lista los buffers
+C-x b     cambia de buffer
+C-x k     cierra el buffer enfocado
+
+** Manejo de archivos
+
+C-x C-f  abrir un archivo
+C-x C-s  guardar un archivo
+
+** Movimiento
+
+C-f	Avanza un caracter
+C-b	Regresa un caracter
+
+C-n	Avanza una línea
+C-p	Regresa una línea
+
+M-f	Avanza una palabra
+M-b	Regresa una palabra
+
+C-a	Regresa al inicio de la línea
+C-e	Avanza al final de la línea
+
+M-a	Regresa al inicio de la oración
+M-e	Avanza al final de la oración
+
+
+* Clase de hoy
+
+** aaaaa No recuerdo que hacía C-...
+
+C-h k <key-sequence>   describe la función que ejecuta una combinación de teclas
+
+** Zoom
+
+Cómo hacer zoom (pa que no se joroben):
+
+C-x-+, C-x--
+
+** Regiones
+
+C-SPC      iniciar selección
+M-w        copiar
+C-y        pegar
+C-w        cortar
+M-%        reemplazar
+
+** Cancelar
+
+C-g        Cancela lo que estés haciendo (al igual que ESC ESC ESC)
+
+** Deshacer
+
+C-x u | C-/ | C-_   deshace una acción (undo)
+
+** Búsqueda
+
+C-s <palabra>     sirve para buscar una palabra hacia adelante
+C-r <palabra>     sirve para buscar una palabra hacia atrás
+C-M-S <palabra>   inicia una búsqueda *regexp* hacia adelante
+C-M-R <palabra>   inicia una búsqueda *regexp* hacia atrás
+
+*regexp* o expresión regular es una secuencia de caracteres que conforma
+un patrón de búsqueda, es decir, con regexp se muestran todas las ocurrencias
+
+** Ocurrencias
+
+M-x occur
+
+** Comentar
+
+M-x comment-region       comenta
+M-x uncomment-region     descomenta
+
+** Eliminar
+
+Backspace     elimina un carácter hacia atrás
+C-Backspace   elimina una palabra hacia atrás (muy usado)
+
+C-d           elimina un carácter hacia adelante
+M-d           elimina una palabra hacia adelante
+
+** Avanzado
+
+C-u  <N> <command>
+
+           N es  un número  natural, command  es un
+           comando de los de arriba. Sirve para repetir N veces el command.
+           Por ejemplo C-u 9 C-p te sube nueve líneas para arriba.
+  
+M-g g <N>  nos lleva a la N-ésima línea del texto.
+
+C-x h      selecciona todo el archivo
+
+M-}        avanza al final de un párrafo
+M-{        avanza al inicio de un párrafo

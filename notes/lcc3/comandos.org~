@@ -1,0 +1,13 @@
+* Clase pasada
+
+** Me equivoqué escribiendo un comando, ¿qué hago?
+
+ESC ESC ESC   cancela lo que estés haciendo
+
+
+
+C-y                 pegar
+C-SPC               seleccionar región
+C-w                 copiar
+C-x u | C-/ | C-_   deshace una acción (undo)
+C-g                 al igual que ESC ESC ESC cancela lo que estés haciendo
