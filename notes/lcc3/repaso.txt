@@ -22,7 +22,7 @@ lo que haga falta de la línea de arriba.
 podemos  colaborar con  una corporación que  cobra de  los artistas
 para financiar la guerra.
 ----------------------------------------------------------------------
-No podemos 
+No podemos
 para financiar la guerra.
 
 En la primera mañana de diciembre  de este año, Daniel Ek, fundador de
@@ -54,7 +54,7 @@ Vázquez y Ángela Ruíz/ en Tiro con arco femenino?*
 
 opciones: oro, plata, bronce
 
-Respuesta -> 
+Respuesta ->
 
 *¿Cuál es la mejor caricatura?*
 
@@ -75,28 +75,28 @@ Respuesta ->
 *** Reemplazar
 
       |       |        |       | |
- ' |   |   |     '  |      '      
-              |           |     | 
- '     |  _,..--I--..,_ |         
+ ' |   |   |     '  |      '
+              |           |     |
+ '     |  _,..--I--..,_ |
    / _.-`` _,-`   `-,_ ``-._ \ lt.
-     `-,_,_,.,_   _,.,_._,-`      
-|  | '   '     `Y` __ '     '     
-  '|        ,-. I /  \       |  | 
- |    |    /   )I \  /     '   |  
-'  '      /   / I_.""._           
+     `-,_,_,.,_   _,.,_._,-`
+|  | '   '     `Y` __ '     '
+  '|        ,-. I /  \       |  |
+ |    |    /   )I \  /     '   |
+'  '      /   / I_.""._
 |  |    ,l  .'..`      `.   ' |  |
- |     / | /   \        l         
-      /, '"  .  \      ||   |   | 
- |  ' ||      |"|      ||   |     
-'     ||      | |      ||       | 
-|     \|      | '.____,'/  |  |   
-   |   |      |  |    |F   '    | 
- | '   |      |  | |\ |     ' |   
-       |      |  | || |      |    
-|  |   |      |  | || |    |    | 
-       |      |  | || |      |    
- ' |   '.____,'  \_||_/   |    |  
-         |/\|    [_][_]      |    
+ |     / | /   \        l
+      /, '"  .  \      ||   |   |
+ |  ' ||      |"|      ||   |
+'     ||      | |      ||       |
+|     \|      | '.____,'/  |  |
+   |   |      |  |    |F   '    |
+ | '   |      |  | |\ |     ' |
+       |      |  | || |      |
+|  |   |      |  | || |    |    |
+       |      |  | || |      |
+ ' |   '.____,'  \_||_/   |    |
+         |/\|    [_][_]      |
 
                                    /\
                               /\  //\\
@@ -313,12 +313,12 @@ la crisis existencial.
 
 *** Eliminar
 
-Haz tres copias del siguiente párrafo y elimínalo de cuatro formas: 
+Haz tres copias del siguiente párrafo y elimínalo de cuatro formas:
 1. Backspace
 2. C-Backspace
 3. C-d
 4. M-d
-		  
+
 El objetivo  es saber mucho  y entender  muy poco, vivir  al corriente
 pero olvidarlo  todo. Ni  modo, es  calidad o cantidad  y nunca  en la
 historia hubo tanto de qué enterarse.
@@ -353,8 +353,8 @@ comiendo una naranja.  No me había acomodado todavía  cuando el camión
 empezó a  andar. Así, mi  amada Akka desapareció  poco a poco  por las
 curvas  del camino  que se  levantaba  hacia Ras  Naqura, mientras  yo
 miraba una naranja que había olvidado en mi bolsillo.
-		  
-*** Comentar 
+
+*** Comentar
 
 
 **** java
@@ -367,9 +367,9 @@ public class Disco extends Articulo{
     public Disco(String titulo,String autor,int anio,String idioma,int canciones,String genero) {
 
         super (titulo,autor,anio);
-	this.idioma=idioma;	
-	this.genero=genero;	
-	this.canciones=canciones;	
+	this.idioma=idioma;
+	this.genero=genero;
+	this.canciones=canciones;
 
     }
 }
@@ -385,7 +385,7 @@ instance (Show a) => Show (List a) where
   show (Cons a l) = "(" ++ (show a) ++ ":" ++ (show l) ++ ")"
 
 -- | myHead. Función que regresa tal vez la cabeza de la lista.
-myHead :: List a -> Maybe a 
+myHead :: List a -> Maybe a
 myHead Void = Nothing
 myHead (Cons a _) = Just a
 
