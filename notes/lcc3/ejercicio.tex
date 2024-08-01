@@ -1,0 +1,182 @@
+\documentclass{article}
+\usepackage[spanish,es-table]{babel}
+\usepackage{enumitem}
+\usepackage{float}
+\usepackage{amsmath}
+\usepackage{graphicx}
+
+\title{Ejercicios}
+\author{Teresa B. \\ Siguiente nombre}
+\date{\today}
+
+\begin{document}
+\maketitle
+
+Mi primer documento en \LaTeX!
+
+Este será nuestro segundo párrafo.\\
+Esta será una nueva línea.
+
+\section{Primera sección}
+
+% Mi primer comentario
+
+\textbf{Texto en negrita}\\
+\textit{Texto en cursiva}\\
+\texttt{Texto en tipo máquina}\\
+\textsc{Texto en mayúsculas eScAlOnAdAs}
+
+{\bf Un texto con más palabras}
+
+Tamaños de letras
+
+{\tiny Texto muy pequeño}
+
+{\small Texto pequeño}
+
+{\Large Texto grande}
+
+{\Huge Texto demasiado grande}
+
+
+
+
+\subsection*{Subsección sin numeración}
+
+\section{Segunda subsección}
+\subsubsection{Algo}
+
+% Ejercicio
+
+% Crea un archivo ejercicio1.tex de clase article y
+% realiza lo siguiente:
+
+% 1. Define el tipo de clase, título, autor, fecha
+% Título = Ejercicio 1, Autor = Nombre, Fecha = Agosto 2024
+% Agrega una sección llamada Introducción.
+% En ella primero van agregar un comentario (Lo que ustedes quieran agregar) despuésel van a escribir tres párrafos:
+% El primero con letra en itálicas y tamaño small.
+{\it\small texto pequeño}
+% El segundo con letras en negritas y tamaño Huge.
+{\bf\Huge Patito feo}
+
+\section{Ejercicios}
+\subsection{Listas}
+
+\begin{itemize}
+\item Elemento 1
+\item Elemento 2
+  \item Elemento 3
+  \end{itemize}
+
+\begin{itemize}
+\item Elemento 1
+  \begin{itemize}
+  \item Subelemento 1
+  \item Subelemento 2
+      \item Subelemento 3
+  \end{itemize}
+\item Elemento 2
+  \item Elemento 3
+  \end{itemize}
+  
+  \begin{enumerate}
+  \item Elem 1
+  \item Elem 2
+    \item Elem 3
+    \end{enumerate}
+
+      \begin{enumerate}[label=\alph*)]
+  \item Elem 1
+  \item Elem 2
+    \begin{itemize}
+    \item Elemento 2.1
+    \item Elemento 2.2
+    \end{itemize}
+    \item Elem 3
+    \end{enumerate}
+
+    \begin{enumerate}
+    \item E1
+      \begin{enumerate}
+      \item E1.1
+      \end{enumerate}
+     \end{enumerate}
+
+     \newlist{contract}{enumerate}{5}
+     \setlist[contract]{label*=\arabic*.}
+     \setlistdepth{5}
+
+     \begin{contract}
+     \item nivel 1
+       \begin{contract}
+       \item nivel 2
+         \begin{contract}
+         \item nivel 3
+         \end{contract}
+       \end{contract}
+     \end{contract}
+
+     \subsection{Modo matemático}
+
+     \subsection{Modo en Línea}
+
+     Primera: $n_i = 2x$ \\
+     Segunda: \(n_i = 2x\)\\
+     Tercera: \begin{math} n_{3i} = 2x\end{math}
+     \subsection{Modo despliegue}
+
+     \[n_i = 2x\]
+     \begin{equation}
+       n_i = 2x
+       \end{equation}
+
+       $$n_i = 2x$$
+\begin{equation*}
+       n_i = 2x
+       \end{equation*}
+
+       \subsection{Figuras}
+
+       % h - aquí, b - abajo, t - arriba, p - otra página
+       % centering - centrar, \raggedleft - Alineado a la izquierda
+       % raggedright - Alineado a la derecha
+
+       % Opciones
+       % width - Ancho, height - Altura, scale - escala, angle - ángulo
+       \begin{figure}[hb]
+         \centering
+         \includegraphics[width = 0.5\linewidth]{gato.jpg}
+         \caption{Gato}
+         \label{fig:gato}
+       \end{figure}
+
+       \includegraphics[scale = 0.5, angle=90]{gato.jpg}
+
+       \subsection{Tablas}
+
+       \begin{tabular}{ | c | c |}
+         \hline
+         Lenguaje & Programas\\
+         \hline
+         Java & 8 \\
+         Python & 10 \\
+         Haskell & 3 \\
+         \hline
+       \end{tabular}
+
+       \begin{table}[H]
+         \centering
+          \begin{tabular}{ | c | c |}
+         \hline
+         Lenguaje & Programas\\
+         \hline
+         Java & 8 \\
+         Python & 10 \\
+         Haskell & 3 \\
+         \hline
+          \end{tabular}
+          \caption{Numero de programas}
+          \label{tab:programas}
+    \end{table}
+\end{document}
